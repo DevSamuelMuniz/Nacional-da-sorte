@@ -11,6 +11,10 @@ body {
   background-image: linear-gradient(to right, #353198, #4a55cf);
 }
 
+.logo-header{
+  margin-top: 1rem;
+}
+
 .ul-headerComponent {
   display: flex;
   justify-content: center;

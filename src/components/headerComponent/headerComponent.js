@@ -15,8 +15,9 @@ function loginRedirect() {
 function headerComponent() {
   return (
     <main className="main-headerComponent">
-      <div>
-        <img src={Logo} alt="Logo Esporte da sorte" />
+
+      <div className="logo-header-container">
+        <a href="/"><img className="logo-header" src={Logo} alt="Logo Esporte da sorte" /></a>
       </div>
 
       <div>
