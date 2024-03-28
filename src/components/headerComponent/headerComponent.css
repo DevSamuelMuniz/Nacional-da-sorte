@@ -1,58 +1,55 @@
 body {
-    font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .main-headerComponent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
 
-    background-image: linear-gradient(to right, #353198, #4A55CF);
-
-
+  background-image: linear-gradient(to right, #353198, #4a55cf);
 }
 
 .ul-headerComponent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    gap: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 4rem;
 
-    font-size: 1.3rem;
-    color: white;
+  font-size: 1.3rem;
+  color: white;
 }
 
-.ul-headerComponent li a{
-    text-decoration: none;
-    color: white;
+.ul-headerComponent li a {
+  text-decoration: none;
+  color: white;
 }
 
-.ul-headerComponent li button{
-    color: #353198;
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 3rem;
-    padding: 0.6rem 3rem;
-    font-size: 1.3rem;
-    transition: 0.s ease-in-out;
+.ul-headerComponent li button {
+  color: #353198;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3rem;
+  padding: 0.6rem 3rem;
+  font-size: 1.3rem;
+  transition: 0s ease-in-out;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.ul-headerComponent li button:hover{
-    background-color: #4A55CF;
-    color: white;
+.ul-headerComponent li button:hover {
+  background-color: #4a55cf;
+  color: white;
 }
 
 @media screen and (max-width: 1100px) {
+  .main-headerComponent {
+    justify-content: center;
+  }
 
-    .main-headerComponent{
-        justify-content: center;
-    }
-
-    .ul-headerComponent{
-        display: none;
-    }
+  .ul-headerComponent {
+    display: none;
+  }
 }
