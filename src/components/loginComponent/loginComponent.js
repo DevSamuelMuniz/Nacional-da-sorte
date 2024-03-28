@@ -19,16 +19,28 @@ function loginComponent() {
 
           <form>
             <label>Email</label>
-            <input type="email" id="email" name="email" placeholder="Seu email"></input>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Seu email"
+            ></input>
 
             <label>Senha</label>
-            <input type="password" id="senha" name="senha" placeholder="Sua senha"></input>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Sua senha"
+            ></input>
 
-            <button>Entrar</button>
+            <button className="button-login">Entrar</button>
           </form>
 
           <p>Ainda não tem Login?</p>
-          <a href="/cadastro">Registre-se</a>
+          <a className="cadastro-login" href="/cadastro">
+            Cadastre-se
+          </a>
         </div>
       </div>
     </main>

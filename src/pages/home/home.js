@@ -3,10 +3,14 @@ import React from "react";
 //css
 import "./home.css";
 
+//components
+import HeaderComponent from "../../components/headerComponent/headerComponent";
+
+
 function home() {
   return (
     <main>
-      <h1>Funcionando Home!</h1>
+      <HeaderComponent />
     </main>
   );
 }

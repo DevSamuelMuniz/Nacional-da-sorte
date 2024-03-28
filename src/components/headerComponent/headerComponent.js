@@ -6,6 +6,12 @@ import "./headerComponent.css";
 //imagens
 import Logo from "../../assets/img/logo/logo-esportedasorte.png";
 
+//redirecionamento do botão login
+function loginRedirect() {
+  window.location.href = "/login";
+}
+
+//Conteúdo Principal
 function headerComponent() {
   return (
     <main className="main-headerComponent">
@@ -29,7 +35,7 @@ function headerComponent() {
               <a href="/">Contatos</a>
             </li>
             <li>
-              <button>Login</button>
+              <button onClick={loginRedirect}>Login</button>
             </li>
           </ul>
         </a>
