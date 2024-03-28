@@ -11,7 +11,7 @@ body {
   background-image: linear-gradient(to right, #353198, #4a55cf);
 }
 
-.logo-header{
+.logo-header {
   margin-top: 1rem;
 }
 
@@ -48,6 +48,72 @@ body {
   color: white;
 }
 
+/* icone burguer */
+
+.bm-burger-button {
+  display: none;
+  position: absolute;
+  width: 2.3rem;
+  height: 2rem;
+  right: 3rem;
+  top: 2.6rem;
+}
+
+.bm-burger-bars {
+  background: white;
+  border-radius: 2rem;
+}
+
+.bm-cross {
+  display: none;
+  background: #bdc3c7;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* menu burguer */
+
+ul.bm-item.ul-headerComponent {
+  margin: 0 3.4rem;
+  padding: 3rem 0;
+}
+
+.bm-menu {
+  align-items: center;
+  background: #343198b6;
+  font-size: 1.15em;
+
+  position: fixed;
+  top: 7.1rem;
+  right: 0;
+}
+
+.bm-item-list {
+  position: static;
+  color: #b8b7ad;
+  padding: 0;
+  margin: 0;
+}
+
+.bm-item {
+  display: inline-block;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+
+  position: fixed;
+  top: 7.1rem;
+  right: 0;
+}
+
 @media screen and (max-width: 1155px) {
   .main-headerComponent {
     justify-content: center;
@@ -55,5 +121,9 @@ body {
 
   .ul-headerComponent {
     display: none;
+  }
+
+  .bm-burger-button {
+    display: block;
   }
 }
