@@ -51,12 +51,8 @@ body {
 /* icone burguer */
 
 .bm-burger-button {
-  display: none;
+  visibility: hidden;
   position: absolute;
-  width: 2.3rem;
-  height: 2rem;
-  right: 3rem;
-  top: 2.6rem;
 }
 
 .bm-burger-bars {
@@ -124,6 +120,10 @@ ul.bm-item.ul-headerComponent {
   }
 
   .bm-burger-button {
-    display: block;
+    visibility: visible;
+    width: 2.3rem;
+    height: 2rem;
+    right: 3rem;
+    top: 2.6rem;
   }
 }

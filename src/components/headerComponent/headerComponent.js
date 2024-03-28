@@ -19,16 +19,6 @@ function HeaderComponent() {
   // Estado para controlar la visibilidad del menú
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Función para abrir el menú
-  const openMenu = () => {
-    setIsMenuOpen(true);
-  };
-
-  // Función para cerrar el menú
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
   return (
     <main className="main-headerComponent">
       <div className="logo-header-container">
@@ -59,8 +49,8 @@ function HeaderComponent() {
         </a>
       </div>
 
-      {/* Menú de hamburguesa que se muestra solo cuando isMenuOpen es true */}
-      <Menu styles={"height= 2rem ;"}
+      <Menu
+        styles={"height= 2rem ;"}
         isOpen={isMenuOpen}
         onStateChange={(state) => setIsMenuOpen(state.isOpen)}
       >
