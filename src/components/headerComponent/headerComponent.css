@@ -11,6 +11,10 @@ body {
   background-image: linear-gradient(to right, #353198, #4a55cf);
 }
 
+.menu{
+  display: none;
+}
+
 .logo-header {
   margin-top: 1rem;
 }
@@ -125,5 +129,9 @@ ul.bm-item.ul-headerComponent {
     height: 2rem;
     right: 3rem;
     top: 2.6rem;
+  }
+
+  .menu{
+    display: block;
   }
 }

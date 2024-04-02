@@ -49,33 +49,35 @@ function HeaderComponent() {
         </a>
       </div>
 
-      <Menu
-        styles={"height= 2rem ;"}
-        isOpen={isMenuOpen}
-        onStateChange={(state) => setIsMenuOpen(state.isOpen)}
-      >
-        <ul className="ul-headerComponent">
-          <li>
-            <a href="/">Início</a>
-          </li>
-          <br></br>
-          <li>
-            <a href="/">Rifas</a>
-          </li>
-          <br></br>
-          <li>
-            <a href="/">Meus Bilhetes</a>
-          </li>
-          <br></br>
-          <li>
-            <a href="/">Contatos</a>
-          </li>
-          <br></br>
-          <li>
-            <button onClick={loginRedirect}>Login</button>
-          </li>
-        </ul>
-      </Menu>
+      <div className="menu">
+        <Menu
+          styles={"height= 2rem ;"}
+          isOpen={isMenuOpen}
+          onStateChange={(state) => setIsMenuOpen(state.isOpen)}
+        >
+          <ul className="ul-headerComponent">
+            <li>
+              <a href="/">Início</a>
+            </li>
+            <br></br>
+            <li>
+              <a href="/">Rifas</a>
+            </li>
+            <br></br>
+            <li>
+              <a href="/">Meus Bilhetes</a>
+            </li>
+            <br></br>
+            <li>
+              <a href="/">Contatos</a>
+            </li>
+            <br></br>
+            <li>
+              <button onClick={loginRedirect}>Login</button>
+            </li>
+          </ul>
+        </Menu>
+      </div>
     </main>
   );
 }

@@ -39,7 +39,7 @@ function cadastroComponent() {
               type="phone"
               id="senha"
               name="senha"
-              placeholder="(88) 8.8888-8888)"
+              placeholder="(88) 8.8888-8888"
             ></input>
 
             <label>senha</label>
