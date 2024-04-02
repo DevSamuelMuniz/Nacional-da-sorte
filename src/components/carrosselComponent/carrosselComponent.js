@@ -9,13 +9,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 //imagens
-
+import Image1 from "../../assets/img/carrossel/image1.png";
+import Image2 from "../../assets/img/carrossel/image2.png";
 
 const CarrosselComponent = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -23,15 +24,21 @@ const CarrosselComponent = () => {
   };
 
   return (
-    <Slider {...settings}>
-      <div>
-        <img src="imagem1.jpg" alt="Imagem 1" />
+    <Slider className="ctn-carrossel" {...settings}>
+      <div className="ctn-carrossel">
+        <img className="img-carrossel" src={Image1} alt="Imagem 1" />
       </div>
-      <div>
-        <img src="imagem2.jpg" alt="Imagem 2" />
+
+      <div className="ctn-carrossel">
+        <img className="img-carrossel" src={Image2} alt="Imagem 1" />
       </div>
-      <div>
-        <img src="imagem3.jpg" alt="Imagem 3" />
+
+      <div className="ctn-carrossel">
+        <img className="img-carrossel" src={Image1} alt="Imagem 1" />
+      </div>
+
+      <div className="ctn-carrossel">
+        <img className="img-carrossel" src={Image2} alt="Imagem 1" />
       </div>
     </Slider>
   );
